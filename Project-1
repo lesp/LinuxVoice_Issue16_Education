@@ -1,0 +1,6 @@
+live_loop :project1 do
+  sample :loop_amen  
+  x, y, z = mc_location
+  mc_teleport(x+5, y+5, z+5)
+  sleep 2.2
+end

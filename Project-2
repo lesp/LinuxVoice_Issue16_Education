@@ -1,0 +1,16 @@
+x, y, z = mc_location
+mc_chat_post("Hello welcome to Project 2")
+mc_teleport(14,6,-88)
+live_loop :project2 do
+  with_fx :reverb, room: 1 do
+    sample :bd_boom, amp: 10, rate: 1
+    mc_set_area(:diamond, 12, 6, -90, 12, 106, -90)
+    mc_set_area(:gold, 13, 6, -91, 13, 106, -91)
+    play 60
+    sleep 1
+    mc_set_area(:obsidian, 12, 6, -90, 12, 106, -90)
+    mc_set_area(:melon, 13, 6, -91, 13, 106, -91)
+    play 63
+    sleep 1
+    end
+end
